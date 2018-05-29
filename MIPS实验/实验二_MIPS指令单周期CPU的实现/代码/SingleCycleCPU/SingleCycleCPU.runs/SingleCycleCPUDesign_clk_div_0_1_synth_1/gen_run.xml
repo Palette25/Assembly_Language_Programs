@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="SingleCycleCPUDesign_clk_div_0_1_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1526988593">
+  <File Type="PA-TCL" Name="SingleCycleCPUDesign_clk_div_0_1.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="SingleCycleCPUDesign_clk_div_0_1_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="SingleCycleCPUDesign_clk_div_0_1.vds"/>
+  <File Type="RDS-UTIL" Name="SingleCycleCPUDesign_clk_div_0_1_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="SingleCycleCPUDesign_clk_div_0_1_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="SingleCycleCPUDesign_clk_div_0_1.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="SingleCycleCPUDesign_clk_div_0_1_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="SingleCycleCPUDesign_clk_div_0_1_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/SingleCycleCPUDesign_clk_div_0_1">
+    <File Path="$PSRCDIR/sources_1/bd/SingleCycleCPUDesign/ip/SingleCycleCPUDesign_clk_div_0_1/SingleCycleCPUDesign_clk_div_0_1.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="SingleCycleCPUDesign_clk_div_0_1"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/SingleCycleCPUDesign_clk_div_0_1">
+    <File Path="$PSRCDIR/sources_1/bd/SingleCycleCPUDesign/ip/SingleCycleCPUDesign_clk_div_0_1/SingleCycleCPUDesign_clk_div_0_1.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="SingleCycleCPUDesign_clk_div_0_1"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

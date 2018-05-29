@@ -1,0 +1,332 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu May 24 17:49:21 2018
+# Process ID: 740
+# Current directory: E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.runs/SingleCycleCPUDesign_SelectAndShow_0_0_synth_1
+# Command line: vivado.exe -log SingleCycleCPUDesign_SelectAndShow_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SingleCycleCPUDesign_SelectAndShow_0_0.tcl
+# Log file: E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.runs/SingleCycleCPUDesign_SelectAndShow_0_0_synth_1/SingleCycleCPUDesign_SelectAndShow_0_0.vds
+# Journal file: E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.runs/SingleCycleCPUDesign_SelectAndShow_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source SingleCycleCPUDesign_SelectAndShow_0_0.tcl -notrace
+Command: synth_design -top SingleCycleCPUDesign_SelectAndShow_0_0 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4448 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 317.645 ; gain = 70.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SingleCycleCPUDesign_SelectAndShow_0_0' [e:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/bd/SingleCycleCPUDesign/ip/SingleCycleCPUDesign_SelectAndShow_0_0/synth/SingleCycleCPUDesign_SelectAndShow_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'SelectAndShow' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SelectAndShow.v:23]
+WARNING: [Synth 8-567] referenced signal 'nextAddress' should be on the sensitivity list [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SelectAndShow.v:36]
+WARNING: [Synth 8-567] referenced signal 'PCAddress' should be on the sensitivity list [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SelectAndShow.v:36]
+WARNING: [Synth 8-567] referenced signal 'Data1' should be on the sensitivity list [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SelectAndShow.v:36]
+WARNING: [Synth 8-567] referenced signal 'rs' should be on the sensitivity list [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SelectAndShow.v:36]
+WARNING: [Synth 8-567] referenced signal 'Data2' should be on the sensitivity list [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SelectAndShow.v:36]
+WARNING: [Synth 8-567] referenced signal 'rt' should be on the sensitivity list [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SelectAndShow.v:36]
+WARNING: [Synth 8-567] referenced signal 'DBData' should be on the sensitivity list [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SelectAndShow.v:36]
+WARNING: [Synth 8-567] referenced signal 'ALUResult' should be on the sensitivity list [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SelectAndShow.v:36]
+INFO: [Synth 8-256] done synthesizing module 'SelectAndShow' (1#1) [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SelectAndShow.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SingleCycleCPUDesign_SelectAndShow_0_0' (2#1) [e:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/bd/SingleCycleCPUDesign/ip/SingleCycleCPUDesign_SelectAndShow_0_0/synth/SingleCycleCPUDesign_SelectAndShow_0_0.v:57]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[31]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[30]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[29]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[28]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[27]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[26]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[25]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[24]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[23]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[22]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[21]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[20]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[19]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[18]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[17]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[16]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[15]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[14]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[13]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[12]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[11]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[10]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[9]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port PCAddress[8]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[31]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[30]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[29]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[28]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[27]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[26]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[25]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[24]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[23]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[22]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[21]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[20]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[19]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[18]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[17]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[16]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[15]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[14]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[13]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[12]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[11]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[10]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[9]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port nextAddress[8]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[31]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[30]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[29]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[28]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[27]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[26]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[25]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[24]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[23]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[22]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[21]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[20]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[19]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[18]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[17]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[16]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[15]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[14]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[13]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[12]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[11]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[10]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[9]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data1[8]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[31]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[30]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[29]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[28]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[27]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[26]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[25]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[24]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[23]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[22]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[21]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[20]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[19]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[18]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[17]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[16]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[15]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[14]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[13]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[12]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[11]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[10]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[9]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port Data2[8]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port ALUResult[31]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port ALUResult[30]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port ALUResult[29]
+WARNING: [Synth 8-3331] design SelectAndShow has unconnected port ALUResult[28]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 356.973 ; gain = 109.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 356.973 ; gain = 109.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 356.973 ; gain = 109.895
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 356.973 ; gain = 109.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SelectAndShow 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 467.945 ; gain = 220.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 467.945 ; gain = 220.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 467.945 ; gain = 220.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 467.945 ; gain = 220.867
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 467.945 ; gain = 220.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 467.945 ; gain = 220.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 467.945 ; gain = 220.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 467.945 ; gain = 220.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 467.945 ; gain = 220.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT4 |     3|
+|2     |LUT6 |    13|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |    16|
+|2     |  inst   |SelectAndShow |    16|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 467.945 ; gain = 220.867
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 298 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 467.945 ; gain = 220.867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 467.945 ; gain = 220.867
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+11 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 562.691 ; gain = 324.598
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.runs/SingleCycleCPUDesign_SelectAndShow_0_0_synth_1/SingleCycleCPUDesign_SelectAndShow_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1018.445 ; gain = 455.754
+INFO: [Common 17-1381] The checkpoint 'E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.runs/SingleCycleCPUDesign_SelectAndShow_0_0_synth_1/SingleCycleCPUDesign_SelectAndShow_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1018.445 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 24 17:50:12 2018...

@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May 24 17:49:00 2018" VIVADOVERSION="2017.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="SingleCycleCPUDesign" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="CLK" SIGIS="undef" SIGNAME="External_Ports_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_div_0" PORT="clk_in"/>
+        <CONNECTION INSTANCE="clk_div_1" PORT="clk_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Enable" SIGIS="undef" SIGNAME="External_Ports_Enable">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="B1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AN0" SIGIS="undef" SIGNAME="generSingal_0_AN1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="generSingal_0" PORT="AN1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AN1" SIGIS="undef" SIGNAME="generSingal_0_AN2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="generSingal_0" PORT="AN2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AN2" SIGIS="undef" SIGNAME="generSingal_0_AN3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="generSingal_0" PORT="AN3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AN3" SIGIS="undef" SIGNAME="generSingal_0_AN4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="generSingal_0" PORT="AN4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="a" SIGIS="undef" SIGNAME="bcdToseg7_0_a">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdToseg7_0" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="b" SIGIS="undef" SIGNAME="bcdToseg7_0_b">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdToseg7_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="bcdToseg7_0_c">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdToseg7_0" PORT="c"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="d" SIGIS="undef" SIGNAME="bcdToseg7_0_d">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdToseg7_0" PORT="d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="e" SIGIS="undef" SIGNAME="bcdToseg7_0_e">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdToseg7_0" PORT="e"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="f" SIGIS="undef" SIGNAME="bcdToseg7_0_f">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdToseg7_0" PORT="f"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="bcdToseg7_0_g">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdToseg7_0" PORT="g"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Control0" SIGIS="undef" SIGNAME="External_Ports_Control0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="SelectAndShow_0" PORT="showControl0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Control1" SIGIS="undef" SIGNAME="External_Ports_Control1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="SelectAndShow_0" PORT="showControl1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Reset" SIGIS="rst" SIGNAME="External_Ports_Reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="SingleCycleCPU_0" PORT="Reset"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/SelectAndShow_0" HWVERSION="1.0" INSTANCE="SelectAndShow_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SelectAndShow" VLNV="xilinx.com:module_ref:SelectAndShow:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="SingleCycleCPUDesign_SelectAndShow_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="PCAddress" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_Address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SingleCycleCPU_0" PORT="Address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="nextAddress" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_nextAddress">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SingleCycleCPU_0" PORT="nextAddress"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="rs" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_rs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SingleCycleCPU_0" PORT="rs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="rt" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_rt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SingleCycleCPU_0" PORT="rt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Data1" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_Data1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SingleCycleCPU_0" PORT="Data1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Data2" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_Data2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SingleCycleCPU_0" PORT="Data2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="ALUResult" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_Result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SingleCycleCPU_0" PORT="Result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="DBData" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_DBData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SingleCycleCPU_0" PORT="DBData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DBDataSrc" SIGIS="undef" SIGNAME="SingleCycleCPU_0_DBDataSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SingleCycleCPU_0" PORT="DBDataSrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="showControl0" SIGIS="undef" SIGNAME="External_Ports_Control0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Control0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="showControl1" SIGIS="undef" SIGNAME="External_Ports_Control1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Control1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="showResult" RIGHT="0" SIGIS="undef" SIGNAME="SelectAndShow_0_showResult">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="generSingal_0" PORT="showInput"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/SingleCycleCPU_0" HWVERSION="1.0" INSTANCE="SingleCycleCPU_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SingleCycleCPU" VLNV="xilinx.com:module_ref:SingleCycleCPU:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="SingleCycleCPUDesign_SingleCycleCPU_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="four_2_input_and_gate_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Reset" SIGIS="rst" SIGNAME="External_Ports_Reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="Opcode" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="Data1" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_Data1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SelectAndShow_0" PORT="Data1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Data2" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_Data2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SelectAndShow_0" PORT="Data2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Address" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_Address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SelectAndShow_0" PORT="PCAddress"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Result" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_Result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SelectAndShow_0" PORT="ALUResult"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="DBData" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_DBData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SelectAndShow_0" PORT="DBData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="nextAddress" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_nextAddress">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SelectAndShow_0" PORT="nextAddress"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="rs" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_rs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SelectAndShow_0" PORT="rs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="rt" RIGHT="0" SIGIS="undef" SIGNAME="SingleCycleCPU_0_rt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SelectAndShow_0" PORT="rt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DBDataSrc" SIGIS="undef" SIGNAME="SingleCycleCPU_0_DBDataSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SelectAndShow_0" PORT="DBDataSrc"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/bcdToseg7_0" HWVERSION="1.0" INSTANCE="bcdToseg7_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="bcdToseg7" VLNV="xilinx.com:module_ref:bcdToseg7:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="SingleCycleCPUDesign_bcdToseg7_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="t3" SIGIS="undef" SIGNAME="generSingal_0_t3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="generSingal_0" PORT="t3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="t2" SIGIS="undef" SIGNAME="generSingal_0_t2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="generSingal_0" PORT="t2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="t1" SIGIS="undef" SIGNAME="generSingal_0_t1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="generSingal_0" PORT="t1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="t0" SIGIS="undef" SIGNAME="generSingal_0_t0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="generSingal_0" PORT="t0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a" SIGIS="undef" SIGNAME="bcdToseg7_0_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="b" SIGIS="undef" SIGNAME="bcdToseg7_0_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="bcdToseg7_0_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="d" SIGIS="undef" SIGNAME="bcdToseg7_0_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="e" SIGIS="undef" SIGNAME="bcdToseg7_0_e">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="e"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="f" SIGIS="undef" SIGNAME="bcdToseg7_0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="bcdToseg7_0_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clk_div_0" HWVERSION="1.0" INSTANCE="clk_div_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_div" VLNV="xilinx.com:xup:clk_div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="100000000"/>
+        <PARAMETER NAME="Component_Name" VALUE="SingleCycleCPUDesign_clk_div_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="A1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clk_div_1" HWVERSION="1.0" INSTANCE="clk_div_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_div" VLNV="xilinx.com:xup:clk_div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="10000"/>
+        <PARAMETER NAME="Component_Name" VALUE="SingleCycleCPUDesign_clk_div_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="clk_div_1_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="generSingal_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/four_2_input_and_gate_0" HWVERSION="1.0" INSTANCE="four_2_input_and_gate_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="four_2_input_and_gate" VLNV="xilinx.com:XUP:four_2_input_and_gate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Delay" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="SingleCycleCPUDesign_four_2_input_and_gate_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_div_0" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B1" SIGIS="undef" SIGNAME="External_Ports_Enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="B2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A3" SIGIS="undef"/>
+        <PORT DIR="I" NAME="B3" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A4" SIGIS="undef"/>
+        <PORT DIR="I" NAME="B4" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="four_2_input_and_gate_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SingleCycleCPU_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y2" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y3" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y4" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/generSingal_0" HWVERSION="1.0" INSTANCE="generSingal_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="generSingal" VLNV="xilinx.com:module_ref:generSingal:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="SingleCycleCPUDesign_generSingal_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_div_1_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_div_1" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="showInput" RIGHT="0" SIGIS="undef" SIGNAME="SelectAndShow_0_showResult">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SelectAndShow_0" PORT="showResult"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AN1" SIGIS="undef" SIGNAME="generSingal_0_AN1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AN2" SIGIS="undef" SIGNAME="generSingal_0_AN2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AN3" SIGIS="undef" SIGNAME="generSingal_0_AN3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AN4" SIGIS="undef" SIGNAME="generSingal_0_AN4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="t3" SIGIS="undef" SIGNAME="generSingal_0_t3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcdToseg7_0" PORT="t3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="t2" SIGIS="undef" SIGNAME="generSingal_0_t2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcdToseg7_0" PORT="t2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="t1" SIGIS="undef" SIGNAME="generSingal_0_t1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcdToseg7_0" PORT="t1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="t0" SIGIS="undef" SIGNAME="generSingal_0_t0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcdToseg7_0" PORT="t0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

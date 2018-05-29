@@ -1,0 +1,156 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Thu May 24 17:55:38 2018
+| Host         : LAPTOP-BBTT6KDL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SingleCycleCPUDesign_control_sets_placed.rpt
+| Design       : SingleCycleCPUDesign
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    92 |
+| Unused register locations in slices containing registers |    11 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1065 |          464 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              68 |           17 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               8 |            4 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------+-------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|                      Clock Signal                     |                  Enable Signal                  |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-------------------------------------------------------+-------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG                                        |                                                 |                                                 |                2 |              2 |
+|  clk_div_1/inst/clk_out                               |                                                 | generSingal_0/inst/counter[3]_i_1_n_0           |                1 |              4 |
+|  SingleCycleCPU_0/inst/pc/nextAddress_reg[31]_i_2_n_0 |                                                 |                                                 |                4 |              7 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_51[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_52[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_53[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_54[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_57[0]     |                                                 |                                                 |                4 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_12[0]     |                                                 |                                                 |                5 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_58[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_59[0]     |                                                 |                                                 |                4 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_60[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_16[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_185[0]    |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_186[0]    |                                                 |                                                 |                4 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_187[0]    |                                                 |                                                 |                5 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_188[0]    |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_61[0]     |                                                 |                                                 |                5 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_19[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_62[0]     |                                                 |                                                 |                2 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_63[0]     |                                                 |                                                 |                2 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_192[0]    |                                                 |                                                 |                5 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_64[0]     |                                                 |                                                 |                4 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_194[0]    |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_68[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_196[0]    |                                                 |                                                 |                4 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_197[0]    |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_198[0]    |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_71[0]     |                                                 |                                                 |                4 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_2[0]      |                                                 |                                                 |                2 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_200[0]    |                                                 |                                                 |                4 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_201[0]    |                                                 |                                                 |                5 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_202[0]    |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_203[0]    |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_204[0]    |                                                 |                                                 |                2 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_205[0]    |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_206[0]    |                                                 |                                                 |                4 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_207[0]    |                                                 |                                                 |                4 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_72[0]     |                                                 |                                                 |                2 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_73[0]     |                                                 |                                                 |                5 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_75[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_210[0]    |                                                 |                                                 |                2 |              8 |
+|  four_2_input_and_gate_0/Y1_BUFG                      | SingleCycleCPU_0/inst/pc/outAddress[31]_i_1_n_0 | SingleCycleCPU_0/inst/pc/outAddress[31]_i_3_n_0 |                4 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_23[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_27[0]     |                                                 |                                                 |                2 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_29[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_44[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_32[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_36[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_38[0]     |                                                 |                                                 |                5 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_40[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_41[0]     |                                                 |                                                 |                4 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_45[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_46[0]     |                                                 |                                                 |                4 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_47[0]     |                                                 |                                                 |                2 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_48[0]     |                                                 |                                                 |                2 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_50[0]     |                                                 |                                                 |                3 |              8 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_22[0]     |                                                 |                                                 |                6 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_209[0]    |                                                 |                                                 |               10 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_21[0]     |                                                 |                                                 |                6 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_11[0]     |                                                 |                                                 |                5 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_13[0]     |                                                 |                                                 |                7 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_14[0]     |                                                 |                                                 |                6 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_189[0]    |                                                 |                                                 |                5 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_190[0]    |                                                 |                                                 |                6 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_193[0]    |                                                 |                                                 |                5 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_195[0]    |                                                 |                                                 |                5 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_199[0]    |                                                 |                                                 |                7 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_208[0]    |                                                 |                                                 |                6 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_30[0]     |                                                 |                                                 |                9 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_42[0]     |                                                 |                                                 |                7 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_67[0]     |                                                 |                                                 |                9 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_49[0]     |                                                 |                                                 |                6 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_69[0]     |                                                 |                                                 |                9 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_70[0]     |                                                 |                                                 |                7 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_6[0]      |                                                 |                                                 |               10 |             16 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_0[0]      |                                                 |                                                 |               10 |             24 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_15[0]     |                                                 |                                                 |               14 |             24 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_191[0]    |                                                 |                                                 |               10 |             24 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_65[0]     |                                                 |                                                 |                9 |             24 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_7[0]      |                                                 |                                                 |                7 |             24 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_43[0]     |                                                 |                                                 |               14 |             24 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_3[0]      |                                                 |                                                 |               13 |             24 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_4[0]      |                                                 |                                                 |               14 |             24 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_8[0]      |                                                 |                                                 |                9 |             24 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_9[0]      |                                                 |                                                 |                9 |             24 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_31[0]     |                                                 |                                                 |               10 |             24 |
+|  CLK_IBUF_BUFG                                        |                                                 | clk_div_0/inst/clk_out_i_1_n_0                  |                8 |             32 |
+|  SingleCycleCPU_0/inst/pc/E[0]                        |                                                 |                                                 |               15 |             32 |
+|  SingleCycleCPU_0/inst/pc/outAddress_reg[1]_26[0]     |                                                 |                                                 |               18 |             32 |
+|  CLK_IBUF_BUFG                                        |                                                 | clk_div_1/inst/clear                            |                8 |             32 |
+|  four_2_input_and_gate_0/Y1_BUFG                      | SingleCycleCPU_0/inst/pc/p_0_in                 |                                                 |               12 |             96 |
++-------------------------------------------------------+-------------------------------------------------+-------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 4      |                     1 |
+| 7      |                     1 |
+| 8      |                    54 |
+| 16+    |                    35 |
++--------+-----------------------+
+
+

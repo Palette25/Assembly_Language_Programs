@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x145ABF5C1E0AC916" bd:device="xc7a35tcpg236-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2017.2" bd:top="SingleCycleCPUDesign" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>SingleCycleCPUDesign</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>RST.RESET</spirit:name>
+        <spirit:displayName>Reset</spirit:displayName>
+        <spirit:description>Reset</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="reset" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="reset_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>RST</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>Reset</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>POLARITY</spirit:name>
+            <spirit:value>ACTIVE_LOW</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="SingleCycleCPUDesign_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>CLK</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Enable</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>AN0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>AN1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>AN2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>AN3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>a</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>b</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>c</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>d</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>e</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>f</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>g</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Control0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Control1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Reset</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>SingleCycleCPUDesign_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>clk_div_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="clk_div" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">SingleCycleCPUDesign_clk_div_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>four_2_input_and_gate_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="four_2_input_and_gate" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">SingleCycleCPUDesign_four_2_input_and_gate_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>clk_div_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="clk_div" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">SingleCycleCPUDesign_clk_div_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="N">10000</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>bcdToseg7_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="bcdToseg7" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">SingleCycleCPUDesign_bcdToseg7_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">bcdToseg7</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>SelectAndShow_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="SelectAndShow" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">SingleCycleCPUDesign_SelectAndShow_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">SelectAndShow</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>generSingal_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="generSingal" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">SingleCycleCPUDesign_generSingal_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">generSingal</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>SingleCycleCPU_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="SingleCycleCPU" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">SingleCycleCPUDesign_SingleCycleCPU_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">SingleCycleCPU</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>CLK_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="CLK"/>
+        <spirit:internalPortReference spirit:componentRef="clk_div_0" spirit:portRef="clk_in"/>
+        <spirit:internalPortReference spirit:componentRef="clk_div_1" spirit:portRef="clk_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_div_0_clk_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_div_0" spirit:portRef="clk_out"/>
+        <spirit:internalPortReference spirit:componentRef="four_2_input_and_gate_0" spirit:portRef="A1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>B1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Enable"/>
+        <spirit:internalPortReference spirit:componentRef="four_2_input_and_gate_0" spirit:portRef="B1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_div_1_clk_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_div_1" spirit:portRef="clk_out"/>
+        <spirit:internalPortReference spirit:componentRef="generSingal_0" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>generSingal_0_AN1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="generSingal_0" spirit:portRef="AN1"/>
+        <spirit:externalPortReference spirit:portRef="AN0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>generSingal_0_AN2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="generSingal_0" spirit:portRef="AN2"/>
+        <spirit:externalPortReference spirit:portRef="AN1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>generSingal_0_AN3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="generSingal_0" spirit:portRef="AN3"/>
+        <spirit:externalPortReference spirit:portRef="AN2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>generSingal_0_AN4</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="generSingal_0" spirit:portRef="AN4"/>
+        <spirit:externalPortReference spirit:portRef="AN3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>generSingal_0_t3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="generSingal_0" spirit:portRef="t3"/>
+        <spirit:internalPortReference spirit:componentRef="bcdToseg7_0" spirit:portRef="t3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>generSingal_0_t2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="generSingal_0" spirit:portRef="t2"/>
+        <spirit:internalPortReference spirit:componentRef="bcdToseg7_0" spirit:portRef="t2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>generSingal_0_t1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="generSingal_0" spirit:portRef="t1"/>
+        <spirit:internalPortReference spirit:componentRef="bcdToseg7_0" spirit:portRef="t1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>generSingal_0_t0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="generSingal_0" spirit:portRef="t0"/>
+        <spirit:internalPortReference spirit:componentRef="bcdToseg7_0" spirit:portRef="t0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>bcdToseg7_0_a</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="bcdToseg7_0" spirit:portRef="a"/>
+        <spirit:externalPortReference spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>bcdToseg7_0_b</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="bcdToseg7_0" spirit:portRef="b"/>
+        <spirit:externalPortReference spirit:portRef="b"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>bcdToseg7_0_c</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="bcdToseg7_0" spirit:portRef="c"/>
+        <spirit:externalPortReference spirit:portRef="c"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>bcdToseg7_0_d</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="bcdToseg7_0" spirit:portRef="d"/>
+        <spirit:externalPortReference spirit:portRef="d"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>bcdToseg7_0_e</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="bcdToseg7_0" spirit:portRef="e"/>
+        <spirit:externalPortReference spirit:portRef="e"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>bcdToseg7_0_f</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="bcdToseg7_0" spirit:portRef="f"/>
+        <spirit:externalPortReference spirit:portRef="f"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>bcdToseg7_0_g</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="bcdToseg7_0" spirit:portRef="g"/>
+        <spirit:externalPortReference spirit:portRef="g"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Control0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Control0"/>
+        <spirit:internalPortReference spirit:componentRef="SelectAndShow_0" spirit:portRef="showControl0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Control1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Control1"/>
+        <spirit:internalPortReference spirit:componentRef="SelectAndShow_0" spirit:portRef="showControl1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SelectShow_0_showResult</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="SelectAndShow_0" spirit:portRef="showResult"/>
+        <spirit:internalPortReference spirit:componentRef="generSingal_0" spirit:portRef="showInput"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>four_2_input_and_gate_0_Y1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="four_2_input_and_gate_0" spirit:portRef="Y1"/>
+        <spirit:internalPortReference spirit:componentRef="SingleCycleCPU_0" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Reset_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Reset"/>
+        <spirit:internalPortReference spirit:componentRef="SingleCycleCPU_0" spirit:portRef="Reset"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SingleCycleCPU_0_Data1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="SingleCycleCPU_0" spirit:portRef="Data1"/>
+        <spirit:internalPortReference spirit:componentRef="SelectAndShow_0" spirit:portRef="Data1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SingleCycleCPU_0_Data2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="SingleCycleCPU_0" spirit:portRef="Data2"/>
+        <spirit:internalPortReference spirit:componentRef="SelectAndShow_0" spirit:portRef="Data2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SingleCycleCPU_0_Address</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="SingleCycleCPU_0" spirit:portRef="Address"/>
+        <spirit:internalPortReference spirit:componentRef="SelectAndShow_0" spirit:portRef="PCAddress"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SingleCycleCPU_0_Result</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="SingleCycleCPU_0" spirit:portRef="Result"/>
+        <spirit:internalPortReference spirit:componentRef="SelectAndShow_0" spirit:portRef="ALUResult"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SingleCycleCPU_0_DataMemOut</spirit:name>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SingleCycleCPU_0_rs</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="SingleCycleCPU_0" spirit:portRef="rs"/>
+        <spirit:internalPortReference spirit:componentRef="SelectAndShow_0" spirit:portRef="rs"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SingleCycleCPU_0_rt</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="SingleCycleCPU_0" spirit:portRef="rt"/>
+        <spirit:internalPortReference spirit:componentRef="SelectAndShow_0" spirit:portRef="rt"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SingleCycleCPU_0_DBDataSrc</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="SingleCycleCPU_0" spirit:portRef="DBDataSrc"/>
+        <spirit:internalPortReference spirit:componentRef="SelectAndShow_0" spirit:portRef="DBDataSrc"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SingleCycleCPU_0_nextAddress</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="SingleCycleCPU_0" spirit:portRef="nextAddress"/>
+        <spirit:internalPortReference spirit:componentRef="SelectAndShow_0" spirit:portRef="nextAddress"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SingleCycleCPU_0_DBData</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="SingleCycleCPU_0" spirit:portRef="DBData"/>
+        <spirit:internalPortReference spirit:componentRef="SelectAndShow_0" spirit:portRef="DBData"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

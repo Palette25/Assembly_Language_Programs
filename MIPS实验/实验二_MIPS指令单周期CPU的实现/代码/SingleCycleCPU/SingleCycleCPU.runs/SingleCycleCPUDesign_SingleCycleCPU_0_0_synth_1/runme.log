@@ -1,0 +1,532 @@
+
+*** Running vivado
+    with args -log SingleCycleCPUDesign_SingleCycleCPU_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SingleCycleCPUDesign_SingleCycleCPU_0_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source SingleCycleCPUDesign_SingleCycleCPU_0_0.tcl -notrace
+Command: synth_design -top SingleCycleCPUDesign_SingleCycleCPU_0_0 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1496 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 317.520 ; gain = 68.301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SingleCycleCPUDesign_SingleCycleCPU_0_0' [e:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/bd/SingleCycleCPUDesign/ip/SingleCycleCPUDesign_SingleCycleCPU_0_0/synth/SingleCycleCPUDesign_SingleCycleCPU_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'SingleCycleCPU' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCycleCPU.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (1#1) [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (2#1) [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v:71]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v:58]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v:41]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v:82]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v:69]
+INFO: [Synth 8-256] done synthesizing module 'PC' (3#1) [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'DataMem' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:23]
+WARNING: [Synth 8-567] referenced signal 'DAddr' should be on the sensitivity list [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:38]
+WARNING: [Synth 8-567] referenced signal 'unit' should be on the sensitivity list [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:38]
+WARNING: [Synth 8-6014] Unused sequential element address_reg was removed.  [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:42]
+WARNING: [Synth 8-6014] Unused sequential element address_reg was removed.  [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:57]
+INFO: [Synth 8-256] done synthesizing module 'DataMem' (4#1) [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:23]
+INFO: [Synth 8-638] synthesizing module 'InstructionMem' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'E:/VivadoProjects/SingleCycleCPU/Instruction.txt' is read successfully [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMem.v:43]
+WARNING: [Synth 8-6014] Unused sequential element address_reg was removed.  [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMem.v:49]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMem' (5#1) [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMem.v:23]
+INFO: [Synth 8-638] synthesizing module 'SignZeroExtends' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SignZeroExtends.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SignZeroExtends' (6#1) [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SignZeroExtends.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (7#1) [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SingleCycleCPU' (8#1) [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCycleCPU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SingleCycleCPUDesign_SingleCycleCPU_0_0' (9#1) [e:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/bd/SingleCycleCPUDesign/ip/SingleCycleCPUDesign_SingleCycleCPU_0_0/synth/SingleCycleCPUDesign_SingleCycleCPU_0_0.v:57]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port clk
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[31]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[30]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[29]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[28]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[27]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[26]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[25]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[24]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[23]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[22]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[21]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[20]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[19]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[18]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[17]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[16]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[15]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[14]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[13]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[12]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[11]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[10]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[9]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[8]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[7]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[1]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port IAddr[0]
+WARNING: [Synth 8-3331] design InstructionMem has unconnected port RW
+WARNING: [Synth 8-3331] design DataMem has unconnected port clk
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 374.629 ; gain = 125.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 374.629 ; gain = 125.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 374.629 ; gain = 125.410
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v:42]
+INFO: [Synth 8-5545] ROM "zero0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ALUSrcA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExtSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCSrc0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nRD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nWR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DBDataSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "unit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "unit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "unit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "unit" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'nextAddress_reg' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v:74]
+WARNING: [Synth 8-327] inferring latch for variable 'DataOut_reg' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[0]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[1]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[2]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[3]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[4]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[5]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[6]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[7]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[8]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[9]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[10]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[11]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[12]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[13]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[14]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[15]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[16]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[17]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[18]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[19]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[20]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[21]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[22]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[23]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[24]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[25]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[26]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[27]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[28]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[29]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[30]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[31]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[32]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[33]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[34]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[35]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[36]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[37]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[38]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[39]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[40]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[41]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[42]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[43]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[44]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[45]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[46]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[47]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[48]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[49]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[50]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[51]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[52]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[53]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[54]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[55]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[56]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[57]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[58]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[59]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[60]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[61]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[62]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[63]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[64]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[65]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[66]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[67]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[68]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[69]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[70]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[71]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[72]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[73]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[74]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[75]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[76]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[77]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[78]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[79]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[80]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[81]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[82]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[83]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[84]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[85]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[86]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[87]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[88]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[89]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[90]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[91]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[92]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[93]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[94]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[95]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[96]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_reg[97]' [E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMem.v:58]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 543.898 ; gain = 294.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |DataMem__GB0        |           1|     47967|
+|2     |DataMem__GB1        |           1|     14338|
+|3     |DataMem__GB2        |           1|     18102|
+|4     |DataMem__GB3        |           1|     22882|
+|5     |DataMem__GB4        |           1|     28831|
+|6     |DataMem__GB5        |           1|     36577|
+|7     |DataMem__GB6        |           1|     43977|
+|8     |SingleCycleCPU__GC0 |           1|      1798|
++------+--------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   8 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 126   
+	   4 Input      8 Bit        Muxes := 16    
+	  69 Input      8 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 16    
+	   2 Input      2 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 96    
+	   2 Input      1 Bit        Muxes := 126   
+	   4 Input      1 Bit        Muxes := 33    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DataMem 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 126   
+	   4 Input      8 Bit        Muxes := 16    
+	   4 Input      2 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 96    
+	   2 Input      1 Bit        Muxes := 125   
+	   4 Input      1 Bit        Muxes := 32    
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 9     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module InstructionMem 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
++---Muxes : 
+	  69 Input      8 Bit        Muxes := 4     
+Module SignZeroExtends 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module SingleCycleCPU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "alu/zero0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pc/nextAddress_reg[0] )
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:10 . Memory (MB): peak = 573.047 ; gain = 323.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------------------------------+----------------+-----------+----------------------+---------------+
+|Module Name                             | RTL Object     | Inference | Size (Depth x Width) | Primitives    | 
++----------------------------------------+----------------+-----------+----------------------+---------------+
+|SingleCycleCPUDesign_SingleCycleCPU_0_0 | rf/regFile_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++----------------------------------------+----------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |DataMem__GB0        |           1|      4727|
+|2     |DataMem__GB1        |           1|        53|
+|3     |DataMem__GB2        |           1|        60|
+|4     |DataMem__GB3        |           1|        68|
+|5     |DataMem__GB4        |           1|       101|
+|6     |DataMem__GB5        |           1|       135|
+|7     |DataMem__GB6        |           1|        64|
+|8     |SingleCycleCPU__GC0 |           1|      1511|
++------+--------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:10 . Memory (MB): peak = 573.047 ; gain = 323.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |DataMem__GB0        |           1|      4660|
+|2     |DataMem__GB1        |           1|        53|
+|3     |DataMem__GB2        |           1|        55|
+|4     |DataMem__GB3        |           1|        66|
+|5     |DataMem__GB4        |           1|        71|
+|6     |DataMem__GB5        |           1|       120|
+|7     |DataMem__GB6        |           1|        62|
+|8     |SingleCycleCPU__GC0 |           1|      1511|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:01:12 . Memory (MB): peak = 573.047 ; gain = 323.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:13 . Memory (MB): peak = 573.047 ; gain = 323.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:13 . Memory (MB): peak = 573.047 ; gain = 323.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:01:13 . Memory (MB): peak = 573.047 ; gain = 323.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:01:14 . Memory (MB): peak = 573.047 ; gain = 323.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:01:14 . Memory (MB): peak = 573.047 ; gain = 323.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:01:14 . Memory (MB): peak = 573.047 ; gain = 323.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    28|
+|2     |LUT1   |    33|
+|3     |LUT2   |    42|
+|4     |LUT3   |   146|
+|5     |LUT4   |   125|
+|6     |LUT5   |   244|
+|7     |LUT6   |  1316|
+|8     |MUXF7  |   132|
+|9     |RAM32M |    12|
+|10    |FDCE   |    31|
+|11    |LD     |  1087|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+---------------+------+
+|      |Instance    |Module         |Cells |
++------+------------+---------------+------+
+|1     |top         |               |  3196|
+|2     |  inst      |SingleCycleCPU |  3196|
+|3     |    datamem |DataMem        |  1472|
+|4     |    alu     |ALU            |    12|
+|5     |    pc      |PC             |  1598|
+|6     |    rf      |RegFile        |   114|
++------+------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:01:14 . Memory (MB): peak = 573.047 ; gain = 323.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 169 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:15 . Memory (MB): peak = 573.047 ; gain = 323.828
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:01:15 . Memory (MB): peak = 573.047 ; gain = 323.828
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1127 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1099 instances were transformed.
+  LD => LDCE: 1087 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+52 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:21 . Memory (MB): peak = 579.531 ; gain = 341.246
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.runs/SingleCycleCPUDesign_SingleCycleCPU_0_0_synth_1/SingleCycleCPUDesign_SingleCycleCPU_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1039.695 ; gain = 460.164
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/VivadoProjects/SingleCycleCPU/SingleCycleCPU.runs/SingleCycleCPUDesign_SingleCycleCPU_0_0_synth_1/SingleCycleCPUDesign_SingleCycleCPU_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1040.891 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 24 17:51:08 2018...
